@@ -1,0 +1,355 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     background-color: #f0efef;
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 1280px;
+
+}
+
+header.global-header {
+  background: #033048;
+}
+
+.logo {
+    font-size: 3em;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    padding-left: 40px;
+    width: 300px;
+    color: white;
+}
+
+header.global-header {
+    height: 100px;
+    background: #033048;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.header-links {
+    display: flex;
+    text-transform: uppercase;
+    margin-right: 40px;
+}
+
+a.nav {
+    color: yellow;
+    font-size: 16px;
+    display: flex;
+    text-transform: uppercase;
+    /* margin-right: 40px; */
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 24px 0 24px;
+    color: #033048;
+    font-weight: 500;
+}
+
+img {
+  width:640px;
+
+}
+
+.firstcharacter {
+    color: #033048;
+    float: left;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 15px;
+    /* padding-left: 3px; */
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #606161;
+    margin-top: 24px;
+    line-height: 1.6em;
+    width: 92%;
+}
+
+.read-more {
+    font-size: 18px;
+    font-weight: 500;
+    color: #033048;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    padding: 40px 0 32px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0, 0.16);
+}
+
+
+li {
+    padding-left: 24px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.content-1 {
+    width: 680px;
+    margin-bottom: 40px;
+}
+
+
+.side-content {
+    /*border: 1px solid hotpink;*/
+    width: 28%;
+    margin-left: 32px;
+}
+
+
+h2 {
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #033048;
+    font-weight: 600;
+    margin-top: 40px;
+    padding-bottom: 8px;
+}
+
+ul.ad {
+    width: 300px;
+    height: 250px;
+    background: white;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-right:24px;
+}
+
+.side li {
+    font-size: 16px;
+    padding-top: 6px;
+    padding: 0;
+    width: 200px;
+    margin-bottom: 8px;
+}
+
+.sign-up {
+  /*border: 1px solid hotpink;*/
+  background: #f9e42e;
+  padding: 16px;
+  width: 100%;
+}
+
+.learn-more {
+    font-size: 16px;
+    font-weight: 700;
+    color: #033048;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 8px 0 16px;
+    text-decoration: none;
+    /* border-bottom: 1px solid rgba(0,0,0, 0.16); */
+}
+
+.sign-up a {
+    /*border: 1px solid hotpink;*/
+    background: #033048;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+    width: 200px;
+    margin: 24px auto;
+    border-radius: 2px;
+}
+
+
+.sign-up a:hover {
+  color: rgba(255,255,255, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.sign-up {
+  /*border: 1px solid hotpink;*/
+  background: #f9e42e;
+  padding: 16px;
+}
+
+.sign-up a {
+    /*border: 1px solid hotpink;*/
+    background: #033048;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+    width: 200px;
+    margin: 24px auto;
+    border-radius: 2px;
+}
+
+
+.sign-up a:hover {
+  color: rgba(255,255,255, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-1 {
+  background: #121212;
+    width: 100%;
+    /*border: 1px solid hotpink;*/
+    padding: 40px;
+}
+
+
+.logo-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    color:#f9e42e;
+    /*border: 1px solid hotpink;*/
+
+}
+
+.social-1 {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid hotpink; */
+    width: 5%;
+    padding-top: 24px;
+    margin: 0 auto;
+}
+
+.footer-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.footer-icon-1 {
+  background-color: #121212;
+  border-radius: 40px;
+}
+
+.footer-icon-1 img {
+  width: 11px;
+}
+
+.footer-icon-1 :hover {
+  color:rgba(0,0,0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-icon-2 {
+  background-color: #121212;
+  border-radius: 40px;
+}
+
+.footer-icon-2 img {
+  width: 26px;
+
+
+}
+
+.footer-icon-2 :hover {
+  color:rgba(0,0,0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
